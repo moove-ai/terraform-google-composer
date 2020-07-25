@@ -10,6 +10,7 @@ resource "google_composer_environment" "composer_env" {
       machine_type = "projects/${var.project}/zones/${var.zone}/machineTypes/${var.machine_type}"
       network = var.network
       subnetwork = var.subnetwork
+      tags = var.tags
       service_account = var.service_account
       disk_size_gb = var.disk_size_gb
       oauth_scopes = var.oath_scopes
