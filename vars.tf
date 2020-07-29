@@ -160,7 +160,7 @@ variable "min_node_count" {
 
 
 variable "tags" {
-  type = string
+  type = list(string)
   description = "List of tags to assign to the composer instance"
   default = ["composer"]
 }
